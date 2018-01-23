@@ -146,7 +146,7 @@ body {
 
 .home__header--template-1 {
   color: white;
-  font-family: montserrat; }
+  font-weight: 300; }
 
 .home__header--template-2 {
   color: white;
@@ -156,7 +156,7 @@ body {
   text-shadow: -1px -1px #ef9816, -2px -2px #ef9816, -3px -3px #ef9816, -4px -4px #ef9816, 1px 1px #dd94c0, 2px 2px #dd94c0, 3px 3px #dd94c0, 4px 4px #dd94c0; }
 
 .home__header--template-4 {
-  font-family: montserrat; }
+  font-weight: 700; }
 
 .home__sub-header {
   color: #646464;
@@ -166,24 +166,27 @@ body {
   transition: all 0.3s; }
 
 .home__sub-header--template-1 {
-  color: white;
-  filter: blur(0px); }
+  color: white; }
 
 .home__sub-header--template-2 {
   color: black;
   font-family: montserrat;
-  letter-spacing: 0.4ch; }
+  letter-spacing: 0.4ch;
+  padding: 1em; }
 
 .home__sub-header--template-3 {
   color: white; }
 
 .home__sub-header--template-4 {
   color: white;
-  letter-spacing: 0.4ch; }
+  letter-spacing: 0.4ch;
+  padding: 1em;
+  font-family: montserrat; }
 
 .home__header-triangle {
   filter: drop-shadow(18px 12px 35px rgba(0, 0, 0, 0.4));
   transition: filter 0.3s;
   animation: hover 15s infinite; }
-  .home__header-triangle:hover {
-    filter: drop-shadow(6px 1px 10px rgba(0, 0, 0, 0.6)); }
+  .home__header-triangle:focus, .home__header-triangle:active, .home__header-triangle:hover {
+    filter: drop-shadow(6px 1px 10px rgba(0, 0, 0, 0.6));
+    animation-play-state: paused; }
