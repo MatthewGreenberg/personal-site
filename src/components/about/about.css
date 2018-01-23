@@ -45,10 +45,14 @@ body {
   font-size: 22px;
   line-height: 1.5;
   font-family: "Montserrat", "sans-serif";
-  margin-top: 0.5em;
   text-align: left; }
   .about__description a {
-    color: #dd94c0; }
+    color: steelblue; }
+
+.about__description--sub-description {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0.25em 0; }
 
 .about__text-color {
   color: #dd94c0; }

@@ -19,9 +19,9 @@ export default class About extends React.Component {
           </div>
           <p className='about__description'>Front End developer with a passion for creating <span className='about__text-color'>functional</span> and <span className='about__text-color'>elegant</span> experiences for the web. I've worked on professional projects for clients such as <span className='about__text-color'>Nike</span>, <span className='about__text-color'>Anheuser-Busch</span>, <span className='about__text-color'>Converse</span> and <span className='about__text-color'>Disney</span>. 
 </p> 
-          <p className='about__description'>I'm very good at <span className='about__text-color'>React.js</span>, <span className='about__text-color'>Sass</span>, <span className='about__text-color'>UI/UX design</span> and <span className='about__text-color'>animations</span>.
-          <p className='about__description'> Check out my <a href={resume} download>resumé</a>.</p>
-        </p>
+          <p className='about__description about__description--sub-description'>I'm very good at <span className='about__text-color'>React.js</span>, <span className='about__text-color'>Sass</span>, <span className='about__text-color'>UI/UX design</span> and <span className='about__text-color'>animations</span>.</p>
+          <p className='about__description about__description--sub-description'>I'm getting good at <span className='about__text-color'>React Native</span>, <span className='about__text-color'>Node.js</span> and <span className='about__text-color'>project management</span>.</p>          
+          <p className='about__description about__description--sub-description'> Check out my <a href={resume} download>resumé</a>.</p>
           <img
             src={whiteTriangle}
             className='about__white-triangle'

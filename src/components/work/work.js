@@ -16,12 +16,14 @@ export default class Work extends React.Component {
     return (
       <div className='work'>
         <div className='work__content-wrapper'>
-          <h1 className='work__header'>Work</h1>
-          <img 
-            src={underline} 
-            className='work__image'
-            alt=''
-          />
+          <div className='work__header-wrapper'>
+            <h1 className='work__header'>Work</h1>
+            <img 
+              src={underline} 
+              className='work__image'
+              alt=''
+            />
+            </div>
           <img
             src={whiteTriangle}
             className='work__image-white-triangle'
@@ -68,7 +70,7 @@ export default class Work extends React.Component {
         <Project
           title='Nike Tech Knit'
           subTitle='Front End / D3.js / Design'
-          description='To promote Nikes new Tech Knit line of clothing, I helped build an interactice site which displays meta-data information about two individuals day wearing the clothing. For the site, I used D3.js to visualize heart-rate information. I also developed an algorithm which translates temperature into an interactive color gradient.'
+          description='Nike Tech Knit was an interactice site that displayed meta-data information about two individuals day wearing the clothing. For the site, I used react and D3.js to visualize heart-rate information. I also developed an algorithm which translated temperature into an interactive color gradient.'
           image={nike}
           switchImage={true}
         />
@@ -82,7 +84,7 @@ export default class Work extends React.Component {
         <Project
           title='Yo Gotti -- The Art of the Hustle'
           subTitle='Front End / Animations / Responsive Optimization'           
-          description='The Art of the Hustle is an interactive board game created for rapper Yo Gotti. I contributed heavily to the Front-End development as well as the Object Oriented JS structure running the game and leaderboard logic.'
+          description='The Art of the Hustle was an interactive board game created for rapper Yo Gotti. I contributed heavily to the Front-End development as well as the Object Oriented JS structure running the game and leaderboard logic.'
           image={yoGotti}
           switchImage={true}
         />

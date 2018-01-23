@@ -19,6 +19,12 @@ body {
 .work__image {
   padding-top: 0em; }
 
+.work__header-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 .work__image-white-triangle {
   position: absolute;
   top: -2px;
@@ -37,6 +43,7 @@ body {
   margin-bottom: -0.2em;
   padding-top: 2em;
   font-size: 40px;
+  display: inline-block;
   line-height: 1.6;
   margin-bottom: -14px;
   letter-spacing: 0.2ch;

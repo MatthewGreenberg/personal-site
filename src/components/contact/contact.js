@@ -16,7 +16,7 @@ export default class Contact extends React.Component {
             alt=''
           />
         </div>
-        <p className='contact__sub-header'>Reach out to me at:</p>
+        <p className='contact__sub-header contact__sub-header--question'>Want a wicked fast website or app with pixel perfect implementation? Reach out to me at:</p>
         <p className='contact__email'>
           <a href='mailto:mattcgreenberg@gmail.com'><span className='contact__text-color'>mattcgreenberg</span>@<span className='contact__text-color'>gmail.com</span></a>
         </p>

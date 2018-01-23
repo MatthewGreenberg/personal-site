@@ -64,3 +64,7 @@ body {
 .contact__white-triangle--two {
   left: 70%;
   transform: rotate(180deg); }
+
+.contact__sub-header--question {
+  max-width: 750px;
+  text-align: center; }

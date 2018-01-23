@@ -15,20 +15,17 @@ import {
   decrement,
   decrementAsync
 } from '../../modules/counter'
-import mainTriangle from './images/main-triangle.svg';
-import blueTriangle from './images/blue-triangle.svg';
-import greenTriangle from './images/green-triangle.svg';
-import yellowTriangle from './images/yellow-triangle.svg';
 import purpleTriangle from './images/purple-triangle.png';
 
 class Home extends React.Component {
-  /* On component Did mount animate the triange */
   render() {
     return (
       <div>
+        <script src="https://rawgithub.com/soulwire/sketch.js/master/js/sketch.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
         <div className='home' >
+        <div id="container"></div>
           <Header />
           <div className='home__header--wrapper'>
             <h1 className='home__header'>Matt Greenberg</h1>
