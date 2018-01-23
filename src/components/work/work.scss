@@ -1,0 +1,49 @@
+@import '../../index.scss';
+
+.work {
+  background: $peach;
+  position: relative;
+}
+
+.work__content-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  width: 750px;
+}
+
+.work__image {
+  padding-top: 0em;
+}
+
+.work__image-white-triangle {
+  position: absolute;
+  top: -2px;
+  left: 10%;
+  filter: drop-shadow(-3px 2px 10px rgba(0,0,0,0.2));
+}
+
+.work__image-white-triangle--second {
+  left: 15%;
+}
+
+.work__image-white-triangle--third {
+  left: 20%;
+}
+
+.work__header {
+  text-align: center;
+  margin-top: 0em;
+  margin-bottom: -0.2em;
+  padding-top: 2em;
+  font-size: 40px;
+  line-height: 1.6;
+  margin-bottom: -14px;
+  letter-spacing: 0.2ch;
+  transition: text-shadow 0.5s;
+  color: black;
+  text-shadow: 1px 1px $color2, 2px 2px $color2, 3px 3px $color2;
+  
+  &:hover {
+     text-shadow: -1px -1px $color1, -2px -2px $color1, -3px -3px $color1;
+  }
+}

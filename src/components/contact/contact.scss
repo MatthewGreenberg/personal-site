@@ -1,0 +1,72 @@
+@import '../../index.scss';
+
+.contact {
+  background: $peach;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0 3em;
+  overflow: hidden;
+  position: relative;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.contact__header {
+  font-size: 40px;
+  line-height: 1.6;
+  letter-spacing: 0.2ch;
+  margin-bottom: -14px;
+  color: black;
+  text-shadow: 1px 1px $color2, 2px 2px $color2, 3px 3px $color2;
+  transition: text-shadow 0.5s;
+
+  &:hover {
+     text-shadow: -1px -1px $color1, -2px -2px $color1, -3px -3px $color1;
+  }
+}
+
+.contact__sub-header {
+  font-family: $font-family-2;
+  font-size: 20px;
+}
+
+.contact__text-color {
+  color: $color2;
+}
+
+.contact__email {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.contact__social {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    transform: rotate(0deg);
+    margin: 0 1em;
+    transition: transform 0.3s;
+    &:hover {
+      transform: rotate(20deg);
+      color: $color2;
+    }
+  }
+}
+
+.contact__white-triangle {
+  position: absolute;
+  bottom: -5%;
+  left: 15%;
+}
+
+.contact__white-triangle--two {
+  left: 70%;
+  transform: rotate(180deg);
+}

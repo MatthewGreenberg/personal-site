@@ -1,0 +1,110 @@
+@import '../../index.scss';
+
+
+@keyframes hover {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 9px);
+    -moz-transform: translate(-3px, 9px);
+    -o-transform: translate(-3px, 9px);
+    -ms-transform: translate(-3px, 9px);
+    transform: translate(-3px, 9px);
+  }
+  40% {
+    -webkit-transform: translate(0px, -8px);
+    -moz-transform: translate(0px, -8px);
+    -o-transform: translate(0px, -8px);
+    -ms-transform: translate(0px, -8px);
+    transform: translate(0px, -8px);
+  }
+  60% {
+    -webkit-transform: translate(4px, 7px);
+    -moz-transform: translate(4px, 7px);
+    -o-transform: translate(4px, 7px);
+    -ms-transform: translate(4px, 7px);
+    transform: translate(4px, 7px);
+  }
+  80% {
+    -webkit-transform: translate(-5px, -8px);
+    -moz-transform: translate(-5px, -8px);
+    -o-transform: translate(-5px, -8px);
+    -ms-transform: translate(-5px, -8px);
+    transform: translate(-5px, -8px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes textShadow {
+
+
+ 0%  { text-shadow: -3px -3px  7px $color2, -6px -6px  7px $color1; }
+  50%  { text-shadow: 3px 3px  8px $color1, 6px 6px  8px $color1; }
+  100%  { text-shadow: -3px -3px  7px $color2, -6px -6px  7px $color1; }
+    
+}
+
+.home {
+  align-items: center;
+  background: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  animation: fadeIn 2s;
+  z-index: 10;
+  position: relative;
+}
+
+.home__header--wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home__header {
+  color: black;
+  margin: 0;
+  opacity: 0.9;
+  font-family: $font-family-1;
+  font-size: 45px;
+  letter-spacing: 0.2ch;
+  transition: all 0.8s;
+  
+  
+  &:hover {
+    text-shadow: -1px -1px $color2, -2px -2px $color2, -3px -3px $color2, -4px -4px $color2, 1px 1px $color1, 2px 2px $color1, 3px 3px $color1,4px 4px $color1; 
+  }
+}
+
+.home__sub-header {
+  color: lighten($gray, 10);
+  font-family: $font-family-2;  
+  margin-top: 0.25em;
+  filter: blur(0.5px);
+  font-weight: 100;
+}
+
+.home__header-triangle {
+  filter: drop-shadow(18px 12px 35px rgba(0,0,0,0.4));
+  transition: filter 0.3s;
+  animation: hover 15s infinite;
+  &:hover {
+    filter: drop-shadow(6px 1px 10px rgba(0,0,0,0.6));
+  }
+}
+
+

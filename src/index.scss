@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:300,400');
+$mint-green: #50E3C2;
+$peach: #ffeddb;
+$gray: #4A4A4A;
+$color2: #ef9816;
+$color1: #dd94c0;
+$font-family-1: 'Lato', 'sans-serif';
+$font-family-2: 'Montserrat', 'sans-serif';
+html {
+ background: white;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-1;
+}

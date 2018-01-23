@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:300,400");
+html {
+  background: white; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", "sans-serif"; }
+
+.work {
+  background: #ffeddb;
+  position: relative; }
+
+.work__content-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  width: 750px; }
+
+.work__image {
+  padding-top: 0em; }
+
+.work__image-white-triangle {
+  position: absolute;
+  top: -2px;
+  left: 10%;
+  filter: drop-shadow(-3px 2px 10px rgba(0, 0, 0, 0.2)); }
+
+.work__image-white-triangle--second {
+  left: 15%; }
+
+.work__image-white-triangle--third {
+  left: 20%; }
+
+.work__header {
+  text-align: center;
+  margin-top: 0em;
+  margin-bottom: -0.2em;
+  padding-top: 2em;
+  font-size: 40px;
+  line-height: 1.6;
+  margin-bottom: -14px;
+  letter-spacing: 0.2ch;
+  transition: text-shadow 0.5s;
+  color: black;
+  text-shadow: 1px 1px #ef9816, 2px 2px #ef9816, 3px 3px #ef9816; }
+  .work__header:hover {
+    text-shadow: -1px -1px #dd94c0, -2px -2px #dd94c0, -3px -3px #dd94c0; }

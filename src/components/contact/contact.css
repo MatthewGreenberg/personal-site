@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:300,400");
+html {
+  background: white; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", "sans-serif"; }
+
+.contact {
+  background: #ffeddb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0 3em;
+  overflow: hidden;
+  position: relative; }
+  .contact a {
+    text-decoration: none;
+    color: black; }
+
+.contact__header {
+  font-size: 40px;
+  line-height: 1.6;
+  letter-spacing: 0.2ch;
+  margin-bottom: -14px;
+  color: black;
+  text-shadow: 1px 1px #ef9816, 2px 2px #ef9816, 3px 3px #ef9816;
+  transition: text-shadow 0.5s; }
+  .contact__header:hover {
+    text-shadow: -1px -1px #dd94c0, -2px -2px #dd94c0, -3px -3px #dd94c0; }
+
+.contact__sub-header {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 20px; }
+
+.contact__text-color {
+  color: #ef9816; }
+
+.contact__email {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 700; }
+
+.contact__social {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contact__social a {
+    transform: rotate(0deg);
+    margin: 0 1em;
+    transition: transform 0.3s; }
+    .contact__social a:hover {
+      transform: rotate(20deg);
+      color: #ef9816; }
+
+.contact__white-triangle {
+  position: absolute;
+  bottom: -5%;
+  left: 15%; }
+
+.contact__white-triangle--two {
+  left: 70%;
+  transform: rotate(180deg); }

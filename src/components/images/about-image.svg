@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="133px" height="91px" viewBox="0 0 133 91" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="64 10 89 45 39 45"></polygon>
+        <filter x="-92.0%" y="-125.7%" width="284.0%" height="362.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="39.3016095 0.433644826 64.3016095 35.4336448 14.3016095 35.4336448"></polygon>
+        <filter x="-14.0%" y="-25.7%" width="128.0%" height="140.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.314962636 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-5" points="89 36 64 1 114 1"></polygon>
+        <filter x="-14.0%" y="-14.3%" width="128.0%" height="140.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About" transform="translate(-449.000000, -90.000000)">
+            <g id="Group" transform="translate(449.000000, 104.000000)">
+                <g id="Triangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#DDA4B2" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Triangle-Copy-2" transform="translate(39.301609, 17.933645) rotate(-539.000000) translate(-39.301609, -17.933645) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#DA9E88" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+                <g id="Triangle-Copy">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                    <use fill="#DA9E88" fill-rule="evenodd" xlink:href="#path-5"></use>
+                </g>
+                <polygon id="Rectangle-2" fill-opacity="0.683169158" fill="#FFFFFF" points="3.96900202 12 129.030998 12 133 20 0 20"></polygon>
+                <polygon id="Rectangle-2-Copy" fill-opacity="0.683169158" fill="#FFFFFF" points="3.96900202 28 129.030998 28 133 36 0 36"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

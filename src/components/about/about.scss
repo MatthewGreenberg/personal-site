@@ -1,0 +1,68 @@
+@import '../../index.scss';
+.about {
+  background: $peach;
+  padding: 2em;
+  border-bottom: 3px solid rgba(255,255,255,0.4);
+  position: relative;
+}
+.about__header-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;  
+  justify-content: center;
+  align-items: center;
+}
+
+.about__image {
+  width: 10em;
+}
+
+.about__header {
+  text-align: center;
+  margin-top: -1em;
+  font-size: 40px;
+  line-height: 1.6;
+  margin-bottom: -9px;
+  letter-spacing: 0.2ch;
+  transition: text-shadow 0.3s;
+  color: black;
+  text-shadow: 1px 1px $color1, 2px 2px $color1, 3px 3px $color1;
+  
+  &:hover { 
+     text-shadow: -1px -1px $color2, -2px -2px $color2, -3px -3px $color2;
+  }
+}
+
+.about__content-wrapper {
+  margin: 0 auto;
+  width: 750px;
+  text-align: center;
+}
+
+.about__description {
+  font-size: 22px;
+  line-height: 1.5;
+  font-family: $font-family-2;
+  margin-top: 0.5em;
+  text-align: left;
+}
+
+.about__text-color {
+  color: $color1;
+}
+
+.about__white-triangle {
+  top: 0%;
+  position: absolute;
+  left: 70%;
+  height: 4em;
+}
+
+.about__white-triangle--two {
+  left: 73%;
+}
+
+.about__white-triangle--three {
+  left: 76%;
+}
+

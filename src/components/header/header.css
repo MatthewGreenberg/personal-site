@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:300,400");
+html {
+  background: white; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", "sans-serif"; }
+
+.header {
+  position: absolute;
+  top: 4%;
+  display: flex;
+  font-family: "Lato", "sans-serif";
+  font-weight: 700; }
+
+.header__link {
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 0.75em;
+  color: rgba(0, 0, 0, 0.8);
+  transition: text-shadow 0.3s;
+  text-shadow: -1px -1px #dd94c0, -2px -2px #dd94c0, -3px -3px 3px #dd94c0; }
+  .header__link:hover {
+    text-shadow: 1px -1px #ef9816, 2px -2px #ef9816, 3px -3px 3px #ef9816; }
