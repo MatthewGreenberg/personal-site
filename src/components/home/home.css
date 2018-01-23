@@ -95,3 +95,16 @@ body {
   animation: hover 15s infinite; }
   .home__header-triangle:hover {
     filter: drop-shadow(6px 1px 10px rgba(0, 0, 0, 0.6)); }
+
+.header {
+  position: absolute;
+  top: 4%;
+  display: flex;
+  font-family: "Lato", "sans-serif";
+  font-weight: 700; }
+
+.header__link {
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 0.75em;
+  color: rgba(0, 0, 0, 0.8); }

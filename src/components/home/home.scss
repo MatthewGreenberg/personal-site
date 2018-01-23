@@ -107,4 +107,17 @@
   }
 }
 
+.header {
+  position: absolute;
+  top: 4%;
+  display: flex;
+  font-family: $font-family-1;
+  font-weight: 700;
+}
 
+.header__link {
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 0.75em;
+  color: rgba(0,0,0,0.8);
+}
