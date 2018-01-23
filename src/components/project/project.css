@@ -15,12 +15,18 @@ body {
   margin: 0 auto;
   padding: 3em 0;
   border-bottom: 3px solid rgba(255, 255, 255, 0.4); }
+  @media (max-width: 768px) {
+    .project {
+      padding: 3em; } }
 
 .project__content_wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 400px; }
+  @media (max-width: 768px) {
+    .project__content_wrapper {
+      max-width: 325px; } }
 
 .project__title {
   font-size: 23px;
@@ -46,12 +52,20 @@ body {
   background: white;
   padding: 0.5em;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
-  margin-left: 3em; }
+  margin-left: 3em;
+  transition: all 0.2s; }
+  @media (max-width: 768px) {
+    .project__image {
+      transform: scale(0.8);
+      margin-left: 0em; } }
 
 .project__image--left {
   order: -1;
   margin-right: 3em;
   margin-left: 0; }
+  @media (max-width: 768px) {
+    .project__image--left {
+      margin-right: 0em; } }
 
 .project__button {
   padding: 10px 20px;

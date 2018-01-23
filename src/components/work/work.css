@@ -15,6 +15,9 @@ body {
   margin: 0 auto;
   text-align: center;
   width: 750px; }
+  @media (max-width: 768px) {
+    .work__content-wrapper {
+      width: auto; } }
 
 .work__image {
   padding-top: 0em; }

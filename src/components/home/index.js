@@ -1,4 +1,5 @@
 import React from 'react'
+import classnames from 'classnames';
 import { push } from 'react-router-redux'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
@@ -10,9 +11,7 @@ import { Link, Element, animateScroll as scroll, scroller } from 'react-scroll';
 import './home.css'
 import {
   increment,
-  incrementAsync,
-  decrement,
-  decrementAsync
+  clearCounter
 } from '../../modules/counter'
 import purpleTriangle from './images/purple-triangle.png';
 
@@ -26,47 +25,79 @@ class Home extends React.Component {
       delay: 100,
       smooth: true,
       containerId: 'work',
-  })
+    })
+  }
+  handleImageClick() {
+    if (this.props.count < 4){
+      this.props.increment();      
+    } else {
+      this.props.clearCounter();
+    }
+    console.log(this.props.count);
   }
   render() {
+    const homeWrapperClass = classnames('home', {
+      'home--template-1': this.props.count === 1,
+      'home--template-2': this.props.count === 2,
+      'home--template-3': this.props.count === 3,
+      'home--template-4': this.props.count === 4,
+    })
+    const headerLinkClass = classnames('header__link', {
+      'header__link--template-1': this.props.count === 1,
+      'header__link--template-2': this.props.count === 2,
+      'header__link--template-3': this.props.count === 3,
+      'header__link--template-4': this.props.count === 4,
+    })  
+    const homeHeaderClass = classnames('home__header', {
+      'home__header--template-1': this.props.count === 1,
+      'home__header--template-2': this.props.count === 2,
+      'home__header--template-3': this.props.count === 3,
+      'home__header--template-4': this.props.count === 4,
+    });  
+     const homeSubHeaderClass = classnames('home__sub-header', {
+      'home__sub-header--template-1': this.props.count === 1,
+      'home__sub-header--template-2': this.props.count === 2,
+      'home__sub-header--template-3': this.props.count === 3,
+      'home__sub-header--template-4': this.props.count === 4,
+    }); 
     return (
       <div>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-        <div className='home' >
-        <div id="container"></div>
-        <header className='header'>
-          <Link 
-            className='header__link'
-            duration={500}
-            delay={100}
-            smooth={true}
-            to='work'
-          >
-            Work
-          </Link>
-          <Link 
-            className='header__link'
-            duration={750}
-            delay={100}
-            smooth={true}
-            to='about'
-          >
-            About
-          </Link>
-          <a 
-            className='header__link'
-            onClick={this.scrollToBottom}
-          >
-            Contact
-          </a>
-        </header>
+        <div className={homeWrapperClass}>
+          <header className='header'>
+            <Link 
+              className={headerLinkClass}
+              duration={500}
+              delay={100}
+              smooth={true}
+              to='work'
+            >
+              Work
+            </Link>
+            <Link 
+              className={headerLinkClass}
+              duration={750}
+              delay={100}
+              smooth={true}
+              to='about'
+            >
+              About
+            </Link>
+            <a 
+              className={headerLinkClass}
+              onClick={this.scrollToBottom}
+            >
+              Contact
+            </a>
+          </header>
           <div className='home__header--wrapper'>
-            <h1 className='home__header'>Matt Greenberg</h1>
-            <h2 className='home__sub-header'>Creative Developer</h2>
+            <h1 className={homeHeaderClass}>Matt Greenberg</h1>
+            <h2 className={homeSubHeaderClass}>Creative Developer</h2>
             <img 
               className='home__header-triangle' 
               src={purpleTriangle}
+              onClick={() => this.handleImageClick()}
             />
           </div>
         </div>
@@ -89,9 +120,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => bindActionCreators({
   increment,
-  incrementAsync,
-  decrement,
-  decrementAsync,
+  clearCounter,
   changePage: () => push('/about-us')
 }, dispatch)
 

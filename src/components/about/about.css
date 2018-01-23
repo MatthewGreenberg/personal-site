@@ -40,6 +40,10 @@ body {
   margin: 0 auto;
   width: 750px;
   text-align: center; }
+  @media (max-width: 768px) {
+    .about__content-wrapper {
+      width: auto;
+      padding: 1em; } }
 
 .about__description {
   font-size: 22px;
@@ -48,11 +52,19 @@ body {
   text-align: left; }
   .about__description a {
     color: steelblue; }
+  @media (max-width: 768px) {
+    .about__description {
+      font-size: 20px;
+      line-height: 1.3; } }
 
 .about__description--sub-description {
   font-size: 20px;
   line-height: 1.5;
   margin: 0.25em 0; }
+  @media (max-width: 768px) {
+    .about__description--sub-description {
+      font-size: 18px;
+      line-height: 1.3; } }
 
 .about__text-color {
   color: #dd94c0; }

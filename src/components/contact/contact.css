@@ -60,6 +60,10 @@ body {
   position: absolute;
   bottom: -5%;
   left: 15%; }
+  @media (max-width: 1000px) {
+    .contact__white-triangle {
+      height: 30%;
+      left: 5%; } }
 
 .contact__white-triangle--two {
   left: 70%;

@@ -9,6 +9,9 @@
   margin: 0 auto;
   text-align: center;
   width: 750px;
+  @media(max-width: $medium) {
+    width: auto;
+  }
 }
 
 .work__image {

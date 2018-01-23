@@ -64,6 +64,10 @@
   position: absolute;
   bottom: -5%;
   left: 15%;
+  @media(max-width: 1000px) {
+    height: 30%;
+    left: 5%;
+  }
 }
 
 .contact__white-triangle--two {
