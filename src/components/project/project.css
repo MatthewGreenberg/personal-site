@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 2em 0;
+  padding: 3em 0;
   border-bottom: 3px solid rgba(255, 255, 255, 0.4); }
 
 .project__content_wrapper {
@@ -44,8 +44,8 @@ body {
   height: 14em;
   max-width: 20em;
   background: white;
-  padding: 0.4em;
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 0.5em;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
   margin-left: 3em; }
 
 .project__image--left {

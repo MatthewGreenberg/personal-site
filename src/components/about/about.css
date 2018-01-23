@@ -47,6 +47,8 @@ body {
   font-family: "Montserrat", "sans-serif";
   margin-top: 0.5em;
   text-align: left; }
+  .about__description a {
+    color: #dd94c0; }
 
 .about__text-color {
   color: #dd94c0; }

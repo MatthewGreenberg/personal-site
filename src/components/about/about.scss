@@ -45,6 +45,9 @@
   font-family: $font-family-2;
   margin-top: 0.5em;
   text-align: left;
+  a {
+    color: $color1;
+  }
 }
 
 .about__text-color {

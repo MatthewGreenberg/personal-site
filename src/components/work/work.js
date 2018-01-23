@@ -7,6 +7,7 @@ import underline from '../images/underline.png';
 import tackleImpossible from '../images/tackle-impossible.png';
 import yoGotti from '../images/yo-gotti.png';
 import nike from '../images/nike.png';
+import albert from '../images/albert.png';
 import toDo from '../images/todo-list.png';
 import drumMachine from '../images/drum-machine.png';
 
@@ -38,11 +39,20 @@ export default class Work extends React.Component {
           />
         </div>
         <Project
+          title='Albert.io'
+          subTitle='Front End / Design / Flux Implementation'
+          description='Front end developer for two years working exclusively with react and flux implementations. Albert is an interactive learning platform.'
+          image={albert}
+          switchImage={false}
+          viewProject={true}
+          projectUrl='https://www.albert.io/'
+        />
+        <Project
           title='Drum Machine'
           subTitle='Front End / Design / Greensock.js'
           description='Expiriment with the greensock animation library and the web audio API.'
           image={drumMachine}
-          switchImage={false}
+          switchImage={true}
           viewProject={true}
           projectUrl='https://codepen.io/mattgreenberg/pen/dObVvw'
         />
@@ -51,7 +61,7 @@ export default class Work extends React.Component {
           subTitle='React / Animations / Flux Implementation'
           description='Experiment for animations within a React.js and Flux front-end framework'
           image={toDo}
-          switchImage={true}
+          switchImage={false}
           viewProject={true}
           projectUrl='https://codepen.io/mattgreenberg/pen/ypeGZv'
         />
@@ -60,21 +70,21 @@ export default class Work extends React.Component {
           subTitle='Front End / D3.js / Design'
           description='To promote Nikes new Tech Knit line of clothing, I helped build an interactice site which displays meta-data information about two individuals day wearing the clothing. For the site, I used D3.js to visualize heart-rate information. I also developed an algorithm which translates temperature into an interactive color gradient.'
           image={nike}
-          switchImage={false}
+          switchImage={true}
         />
         <Project 
           title='Anheuser-Busch -- Tackle Impossible'
           subTitle='Full Stack / React / Responsive Optimization' 
           description='Tackle Impossible was a project for Anheuser-Buschs campaign against drunk driving. Within the React.js front end, I built out components for the client-facing app and admin pages. I also created routes to register users and save their projects within the Mongo DB database.'
           image={tackleImpossible}
-          switchImage={true}
+          switchImage={false}
         />
         <Project
           title='Yo Gotti -- The Art of the Hustle'
           subTitle='Front End / Animations / Responsive Optimization'           
           description='The Art of the Hustle is an interactive board game created for rapper Yo Gotti. I contributed heavily to the Front-End development as well as the Object Oriented JS structure running the game and leaderboard logic.'
           image={yoGotti}
-          switchImage={false}
+          switchImage={true}
         />
       </div>
     );
