@@ -2,7 +2,6 @@ import React from 'react'
 import './about.css';
 import underline from '../images/underline.png';
 import whiteTriangle from '../images/white-triangle.png';
-import { Document, Page } from 'react-pdf';
 import resume from '../images/resume.pdf';
 
 export default class About extends React.Component {
