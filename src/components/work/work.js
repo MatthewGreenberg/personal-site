@@ -52,7 +52,7 @@ export default class Work extends React.Component {
         <Project
           title='Drum Machine'
           subTitle='Front End / Design / Greensock.js'
-          description='Expiriment with the greensock animation library and the web audio API.'
+          description='Experiment with the greensock animation library and the web audio API.'
           image={drumMachine}
           switchImage={true}
           viewProject={true}
