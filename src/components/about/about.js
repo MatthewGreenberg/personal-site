@@ -1,7 +1,8 @@
 import React from 'react'
 import './about.css';
-import underline from '../images/underline.png'
-import whiteTriangle from '../images/white-triangle.png'
+import underline from '../images/underline.png';
+import whiteTriangle from '../images/white-triangle.png';
+import { Document, Page } from 'react-pdf';
 import resume from '../images/resume.pdf';
 
 export default class About extends React.Component {
@@ -21,7 +22,7 @@ export default class About extends React.Component {
 </p> 
           <p className='about__description about__description--sub-description'>I'm very good at <span className='about__text-color'>React.js</span>, <span className='about__text-color'>Sass</span>, <span className='about__text-color'>UI/UX design</span> and <span className='about__text-color'>animations</span>.</p>
           <p className='about__description about__description--sub-description'>I'm getting good at <span className='about__text-color'>React Native</span>, <span className='about__text-color'>Node.js</span> and <span className='about__text-color'>project management</span>.</p>          
-          <p className='about__description about__description--sub-description'> Check out my <a href={resume} download>resumé</a>.</p>
+          <p className='about__description about__description--sub-description'> Check out my <a onClick={() => window.open(resume)}>resumé</a>.</p>
           <img
             src={whiteTriangle}
             className='about__white-triangle'

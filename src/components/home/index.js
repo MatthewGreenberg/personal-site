@@ -33,7 +33,7 @@ class Home extends React.Component {
     } else {
       this.props.clearCounter();
     }
-    console.log(this.props.count);
+
   }
   render() {
     const homeWrapperClass = classnames('home', {

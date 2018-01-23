@@ -16,7 +16,7 @@ body {
   padding: 0 0 3em;
   overflow: hidden;
   position: relative; }
-  @media (max-width: 420px) {
+  @media (max-width: 600px) {
     .contact {
       padding: 0 1em 3em; } }
   .contact a {
@@ -37,7 +37,7 @@ body {
 .contact__sub-header {
   font-family: "Montserrat", "sans-serif";
   font-size: 20px; }
-  @media (max-width: 420px) {
+  @media (max-width: 600px) {
     .contact__sub-header {
       font-size: 17px; } }
 
@@ -48,7 +48,7 @@ body {
   font-size: 30px;
   margin: 0;
   font-weight: 700; }
-  @media (max-width: 420px) {
+  @media (max-width: 600px) {
     .contact__email {
       font-size: 25px; } }
 
@@ -73,7 +73,7 @@ body {
     .contact__white-triangle {
       height: 30%;
       left: 5%; } }
-  @media (max-width: 420px) {
+  @media (max-width: 600px) {
     .contact__white-triangle {
       height: 20%; } }
 

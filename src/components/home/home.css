@@ -58,7 +58,9 @@ body {
   top: 4%;
   display: flex;
   font-family: "Lato", "sans-serif";
-  font-weight: 700; }
+  font-weight: 700;
+  left: 50%;
+  transform: translateX(-50%); }
 
 .header__link {
   cursor: pointer;
@@ -136,7 +138,7 @@ body {
   font-size: 45px;
   letter-spacing: 0.2ch;
   transition: all 0.8s; }
-  @media (max-width: 420px) {
+  @media (max-width: 600px) {
     .home__header {
       font-size: 35px; } }
   .home__header:hover {
@@ -160,7 +162,6 @@ body {
   color: #646464;
   font-family: "Montserrat", "sans-serif";
   margin-top: 0.25em;
-  filter: blur(0.5px);
   font-weight: 100;
   transition: all 0.3s; }
 

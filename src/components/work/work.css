@@ -33,7 +33,7 @@ body {
   top: -2px;
   left: 10%;
   filter: drop-shadow(-3px 2px 10px rgba(0, 0, 0, 0.2)); }
-  @media (max-width: 420px) {
+  @media (max-width: 600px) {
     .work__image-white-triangle {
       height: 2%; } }
 

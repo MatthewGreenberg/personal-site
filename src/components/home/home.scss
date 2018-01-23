@@ -63,6 +63,8 @@
   display: flex;
   font-family: $font-family-1;
   font-weight: 700;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header__link {
@@ -187,7 +189,6 @@
   color: lighten($gray, 10);
   font-family: $font-family-2;  
   margin-top: 0.25em;
-  filter: blur(0.5px);
   font-weight: 100;
   transition: all 0.3s;
 }
