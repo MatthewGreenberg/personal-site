@@ -16,6 +16,9 @@ body {
   padding: 0 0 3em;
   overflow: hidden;
   position: relative; }
+  @media (max-width: 420px) {
+    .contact {
+      padding: 0 1em 3em; } }
   .contact a {
     text-decoration: none;
     color: black; }
@@ -34,6 +37,9 @@ body {
 .contact__sub-header {
   font-family: "Montserrat", "sans-serif";
   font-size: 20px; }
+  @media (max-width: 420px) {
+    .contact__sub-header {
+      font-size: 17px; } }
 
 .contact__text-color {
   color: #ef9816; }
@@ -42,6 +48,9 @@ body {
   font-size: 30px;
   margin: 0;
   font-weight: 700; }
+  @media (max-width: 420px) {
+    .contact__email {
+      font-size: 25px; } }
 
 .contact__social {
   font-size: 25px;
@@ -64,6 +73,9 @@ body {
     .contact__white-triangle {
       height: 30%;
       left: 5%; } }
+  @media (max-width: 420px) {
+    .contact__white-triangle {
+      height: 20%; } }
 
 .contact__white-triangle--two {
   left: 70%;

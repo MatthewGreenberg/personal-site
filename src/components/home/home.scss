@@ -158,6 +158,10 @@
   font-size: 45px;
   letter-spacing: 0.2ch;
   transition: all 0.8s;
+
+  @media(max-width: $small) {
+    font-size: 35px;
+  }
   
   &:hover {
     text-shadow: -1px -1px $color2, -2px -2px $color2, -3px -3px $color2, -4px -4px $color2, 1px 1px $color1, 2px 2px $color1, 3px 3px $color1,4px 4px $color1; 

@@ -136,6 +136,9 @@ body {
   font-size: 45px;
   letter-spacing: 0.2ch;
   transition: all 0.8s; }
+  @media (max-width: 420px) {
+    .home__header {
+      font-size: 35px; } }
   .home__header:hover {
     text-shadow: -1px -1px #ef9816, -2px -2px #ef9816, -3px -3px #ef9816, -4px -4px #ef9816, 1px 1px #dd94c0, 2px 2px #dd94c0, 3px 3px #dd94c0, 4px 4px #dd94c0; }
 

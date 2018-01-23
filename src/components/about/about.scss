@@ -4,6 +4,9 @@
   padding: 2em;
   border-bottom: 3px solid rgba(255,255,255,0.4);
   position: relative;
+  @media(max-width: $small) {
+    padding: 1em;
+  }
 }
 .about__header-wrapper {
   display: flex;

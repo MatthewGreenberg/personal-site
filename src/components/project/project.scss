@@ -11,6 +11,9 @@
   @media(max-width: $medium) {
     padding: 3em;
   }
+  @media(max-width: $small) {
+    flex-direction: column;
+  }
 }
 
 .project__content_wrapper {
@@ -20,6 +23,8 @@
   max-width: 400px;
   @media(max-width: $medium) {
     max-width: 325px;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -27,6 +32,9 @@
   font-size: 23px;
   margin-bottom: 0;
   color: black;
+  @media(max-width: $small) {
+    text-align: center;
+  }
 }
 
 .project__sub-title {
@@ -37,6 +45,9 @@
   font-size: 14px;
   margin-top: 0.1em;
   margin-bottom: 0; 
+  @media(max-width: $small) {
+    text-align: center;
+  }
 }
 
 .project__description {
@@ -55,6 +66,9 @@
   @media(max-width: $medium) {
     transform: scale(0.8);
     margin-left: 0em;
+  }
+  @media(max-width: $small) {
+    order: -1;
   }
 }
 

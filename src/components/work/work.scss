@@ -30,6 +30,9 @@
   top: -2px;
   left: 10%;
   filter: drop-shadow(-3px 2px 10px rgba(0,0,0,0.2));
+  @media(max-width: $small) {
+    height: 2%;
+  }
 }
 
 .work__image-white-triangle--second {

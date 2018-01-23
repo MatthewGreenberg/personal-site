@@ -9,6 +9,9 @@
   padding: 0 0 3em;
   overflow: hidden;
   position: relative;
+  @media(max-width: $small) {
+    padding: 0 1em 3em;
+  }
   a {
     text-decoration: none;
     color: black;
@@ -32,6 +35,9 @@
 .contact__sub-header {
   font-family: $font-family-2;
   font-size: 20px;
+  @media(max-width: $small) {
+    font-size: 17px;
+  }
 }
 
 .contact__text-color {
@@ -42,6 +48,9 @@
   font-size: 30px;
   margin: 0;
   font-weight: 700;
+  @media(max-width: $small) {
+    font-size: 25px;
+  }
 }
 
 .contact__social {
@@ -67,6 +76,9 @@
   @media(max-width: 1000px) {
     height: 30%;
     left: 5%;
+  }
+  @media(max-width: $small) {
+    height: 20%;
   }
 }
 
