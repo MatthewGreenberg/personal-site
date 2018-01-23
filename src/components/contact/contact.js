@@ -22,7 +22,7 @@ export default class Contact extends React.Component {
         </p>
         <p className='contact__sub-header'>You can find me on:</p>
         <div className='contact__social'>
-          <a href="http://codepen.io/mattgreenberg/" target="_blank"><i class="fa fa-codepen"> </i></a><a href="https://linkedin.com/in/mattcgreenberg" target="_blank"><i class="fa fa-linkedin"> </i></a><a href="https://twitter.com/McGreenBeats" target="_blank"><i class="fa fa-twitter"> </i></a><a href="https://github.com/MatthewGreenberg" target="_blank"><i class="fa fa-github"></i></a><a href="mailto:mattcgreenberg@gmail.com?Subject=Hello%20Matt"><i class="fa fa-envelope-o"></i></a>
+          <a href="http://codepen.io/mattgreenberg/" target="_blank"><i className="fa fa-codepen"> </i></a><a href="https://linkedin.com/in/mattcgreenberg" target="_blank"><i className="fa fa-linkedin"> </i></a><a href="https://twitter.com/McGreenBeats" target="_blank"><i className="fa fa-twitter"> </i></a><a href="https://github.com/MatthewGreenberg" target="_blank"><i className="fa fa-github"></i></a><a href="mailto:mattcgreenberg@gmail.com?Subject=Hello%20Matt"><i className="fa fa-envelope-o"></i></a>
         </div>
         <img 
           src={triangles}
