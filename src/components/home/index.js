@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactGA from 'react-ga';
-ReactGA.initialize('UA-113127145-1');
 import classnames from 'classnames';
 import { push } from 'react-router-redux'
 import { bindActionCreators } from 'redux'
@@ -18,6 +17,11 @@ import {
 import purpleTriangle from './images/purple-triangle.png';
 
 class Home extends React.Component {
+  componentDidMount() {
+    ReactGA.initialize('UA-113127145-1');
+    ReactGA.pageview(window.location.href);
+  }
+  
   scrollToBottom = () => {
     scroll.scrollToBottom({duration: 1500});
   }
@@ -40,9 +44,7 @@ class Home extends React.Component {
       action: 'Clicked Triangle',
     });
   }
-  componentDidMount() {
-    ReactGA.pageview(window.location.href);
-  }
+ 
   render() {
     const homeWrapperClass = classnames('home', {
       'home--template-1': this.props.count === 1,
