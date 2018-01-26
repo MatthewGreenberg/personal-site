@@ -70,7 +70,7 @@ export default class Work extends React.Component {
         <Project
           title='Nike Tech Knit'
           subTitle='Front End / D3.js / Design'
-          description='Nike Tech Knit was an interactice site that displayed meta-data information about two individuals day wearing the clothing. For the site, I used react and D3.js to visualize heart-rate information. I also developed an algorithm which translated temperature into an interactive color gradient.'
+          description='Nike Tech Knit was an interactive site that displayed meta-data information about two individuals day wearing the clothing. For the site, I used react and D3.js to visualize heart-rate information. I also developed an algorithm which translated temperature into an interactive color gradient.'
           image={nike}
           switchImage={true}
         />
