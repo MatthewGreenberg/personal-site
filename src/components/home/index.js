@@ -1,4 +1,6 @@
 import React from 'react'
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-113127145-1');
 import classnames from 'classnames';
 import { push } from 'react-router-redux'
 import { bindActionCreators } from 'redux'
@@ -33,7 +35,13 @@ class Home extends React.Component {
     } else {
       this.props.clearCounter();
     }
-
+    ReactGA.event({
+      category: 'Interaction',
+      action: 'Clicked Triangle',
+    });
+  }
+  componentDidMount() {
+    ReactGA.pageview(window.location.href);
   }
   render() {
     const homeWrapperClass = classnames('home', {
