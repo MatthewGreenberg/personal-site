@@ -6,6 +6,7 @@ import whiteTriangle from '../images/white-triangle.png';
 import underline from '../images/underline.png';
 import tackleImpossible from '../images/tackle-impossible.png';
 import yoGotti from '../images/yo-gotti.png';
+import carrierDirect from '../images/carrier-direct.png';
 import nike from '../images/nike.png';
 import albert from '../images/albert.png';
 import toDo from '../images/todo-list.png';
@@ -18,8 +19,8 @@ export default class Work extends React.Component {
         <div className='work__content-wrapper'>
           <div className='work__header-wrapper'>
             <h1 className='work__header'>Work</h1>
-            <img 
-              src={underline} 
+            <img
+              src={underline}
               className='work__image'
               alt=''
             />
@@ -40,6 +41,15 @@ export default class Work extends React.Component {
             alt=''
           />
         </div>
+        <Project
+          title='Carrier Direct'
+          subTitle='Full Stack Engineer'
+          description='Currently working as a full stack engineer on a React + Redux application with a node.js backend.'
+          image={carrierDirect}
+          switchImage={true}
+          viewProject={true}
+          projectUrl='https://www.carrierdirect.com'
+        />
         <Project
           title='Albert.io'
           subTitle='Front End / Design / Flux Implementation'
@@ -74,16 +84,16 @@ export default class Work extends React.Component {
           image={nike}
           switchImage={true}
         />
-        <Project 
+        <Project
           title='Anheuser-Busch -- Tackle Impossible'
-          subTitle='Full Stack / React / Responsive Optimization' 
+          subTitle='Full Stack / React / Responsive Optimization'
           description='Tackle Impossible was a project for Anheuser-Buschs campaign against drunk driving. Within the React.js front end, I built out components for the client-facing app and admin pages. I also created routes to register users and save their projects within the Mongo DB database.'
           image={tackleImpossible}
           switchImage={false}
         />
         <Project
           title='Yo Gotti -- The Art of the Hustle'
-          subTitle='Front End / Animations / Responsive Optimization'           
+          subTitle='Front End / Animations / Responsive Optimization'
           description='The Art of the Hustle was an interactive board game created for rapper Yo Gotti. I contributed heavily to the Front-End development as well as the Object Oriented JS structure running the game and leaderboard logic.'
           image={yoGotti}
           switchImage={true}
